@@ -3,7 +3,7 @@ pipeline {
 
     stages {
         stage('Build on Agent') {
-            agent { label 'agent' }
+            agent { label 'agent-03' }
             steps {
                 echo "Running on agent: ${env.NODE_NAME}"
                 sh 'hostname && whoami'
